@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Simple Index Page</title>
+</head>
+
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a simple index page.</p>
+</body>
+<script>
+    window.onload = () => {
+        console.log('window.onload');
+        currentURL = window.location.href;
+        lowerCaseURL = currentURL.toLowerCase();
+        if (currentURL != lowerCaseURL) {
+            location.replace(lowerCaseURL);
+        }
+    };
+</script>
+
+</html>
